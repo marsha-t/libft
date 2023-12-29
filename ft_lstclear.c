@@ -6,7 +6,7 @@
 /*   By: mateo <mateo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 15:29:59 by mateo             #+#    #+#             */
-/*   Updated: 2023/12/29 10:03:17 by mateo            ###   ########.fr       */
+/*   Updated: 2023/12/29 11:53:08 by mateo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*start;
 	t_list	*next;
 
-	if ((!lst) || (!del) || !(*lst))
+	if ((!lst) || !(*lst))
 		return ;
 	start = *lst;
 	while (start)

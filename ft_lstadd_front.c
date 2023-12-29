@@ -6,7 +6,7 @@
 /*   By: mateo <mateo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 14:54:40 by mateo             #+#    #+#             */
-/*   Updated: 2023/12/26 13:26:41 by mateo            ###   ########.fr       */
+/*   Updated: 2023/12/29 11:53:02 by mateo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (!lst || !new)
+	if ((!lst) || (!new))
 		return ;
 	new->next = *lst;
 	*lst = new;

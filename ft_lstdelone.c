@@ -6,7 +6,7 @@
 /*   By: mateo <mateo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 15:20:29 by mateo             #+#    #+#             */
-/*   Updated: 2023/12/27 22:30:19 by mateo            ###   ########.fr       */
+/*   Updated: 2023/12/29 11:53:26 by mateo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!lst || !del)
+	if (!lst)
 		return ;
 	del(lst->content);
 	free(lst);
