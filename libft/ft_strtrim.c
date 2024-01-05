@@ -29,6 +29,8 @@ static size_t	ft_strtrimlen(char const *s1, char const *set)
 
 	while (ft_is_set(*s1, set))
 		s1++;
+	if (*s1 == '\0')
+		return (0);
 	len = 0;
 	while (*s1)
 	{
@@ -72,3 +74,26 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ptr[i] = '\0';
 	return (ptr);
 }
+
+// void	ft_print_result(char const *s)
+// {
+// 	int		len;
+
+// 	len = 0;
+// 	while (s[len])
+// 		len++;
+// 	write(1, s, len);
+// }
+
+// int main(void)
+// {
+// 	char s1[] = "          ";
+// 	char *strtrim;
+// 	if (!(strtrim = ft_strtrim(s1, " ")))
+// 		ft_print_result("NULL");
+// 	else
+// 		ft_print_result(strtrim);
+// 	if (strtrim == s1)
+// 		ft_print_result("\nA new string was not returned");
+
+// }
