@@ -34,7 +34,7 @@ char	*ft_itoa(int n)
 	long long	x;
 
 	x = n;
-	count = ft_i_count(x);
+	count = ft_i_count(n);
 	ptr = (char *)malloc(sizeof(char) * (count + 1));
 	if (!ptr)
 		return (0);
